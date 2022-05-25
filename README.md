@@ -1,3 +1,3 @@
 # myProg
-This is from me
+This is from me\n
 [+] Add machanger
