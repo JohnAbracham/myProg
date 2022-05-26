@@ -1,3 +1,3 @@
 # myProg
-[+] Add machanger
-[+] Add network_scaner
+[+] Add machanger.py
+[+] Add network_scaner.py
