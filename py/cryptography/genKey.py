@@ -1,0 +1,19 @@
+from Crypto.PublicKey import RSA
+
+key = RSA.generate(2048)
+privateKey = key.export_key()
+publicKey = key.publickey().export_key()
+
+# save private key to file
+with open('keys/private.pem', 'wb') as f:
+    f.write(privateKey)
+
+print('[+]  Private key saved to private.pem')
+
+# save public key to file
+with open('keys/public.pem', 'wb') as f:
+    f.write(publicKey)
+print('[+]  Public key saved to public.pem')
+
+
+print('Done')
